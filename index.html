@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday!</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Tahoma,Verdana,sans-serif;
+}
+
+body{
+    overflow-x:hidden;
+    background:
+    radial-gradient(circle at top,#8fd3ff 0%,#4b8df8 35%,#2c5ebd 100%);
+    color:#082567;
+    min-height:100vh;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background-image:
+        radial-gradient(white 1px,transparent 1px),
+        radial-gradient(#b8f6ff 1px,transparent 1px);
+    background-size:45px 45px,80px 80px;
+    opacity:.25;
+    pointer-events:none;
+}
+
+.birthday-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    min-height:100vh;
+    padding:60px;
+    gap:50px;
+}
+
+.message{
+    max-width:60%;
+    background:#dfefff;
+    border:4px solid white;
+    box-shadow:
+    inset 0 0 0 2px #7caeff,
+    10px 10px 0 rgba(0,0,0,.15);
+    border-radius:12px;
+    padding:35px;
+    position:relative;
+}
+
+.message::before{
+    content:"Birthday.exe";
+    display:block;
+    background:linear-gradient(#0068d8,#3b8cff);
+    color:white;
+    padding:10px 15px;
+    margin:-35px -35px 30px;
+    font-weight:bold;
+    border-radius:8px 8px 0 0;
+    letter-spacing:1px;
+}
+
+.photo{
+    width:100%;
+    max-width:520px;
+    display:block;
+    margin:25px auto;
+    border:6px solid white;
+    outline:2px solid #6aa8ff;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+
+h1{
+    font-size:64px;
+    color:#0059c9;
+    text-shadow:
+        2px 2px white,
+        4px 4px rgba(0,0,0,.15);
+}
+
+h2{
+    margin:20px 0;
+    color:#0d4ca3;
+}
+
+p{
+    font-size:22px;
+    line-height:1.8;
+}
+
+/* iPod */
+
+.ipod{
+    width:290px;
+    background:
+    linear-gradient(#edf8ff,#bddfff);
+    border-radius:16px;
+    border:4px solid white;
+    box-shadow:
+        inset 0 0 0 2px #79aefb,
+        12px 12px 0 rgba(0,0,0,.18);
+    padding:20px;
+    color:#003b77;
+}
+
+.screen{
+    width:220px;
+    height:150px;
+    margin:auto;
+    border-radius:8px;
+    background:
+        linear-gradient(#f6ffff,#cbe8ff);
+    border:3px inset white;
+    color:#003366;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    font-weight:bold;
+    font-size:18px;
+    text-shadow:1px 1px white;
+}
+
+.wheel{
+    width:190px;
+    height:190px;
+    margin:35px auto 10px;
+    border-radius:50%;
+    background:
+    radial-gradient(circle,#fdfdfd,#d8d8d8);
+    border:3px solid white;
+    box-shadow:
+        inset 0 0 10px rgba(255,255,255,.8),
+        inset 0 0 15px rgba(0,0,0,.12);
+    position:relative;
+}
+
+.center{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:linear-gradient(#d9f2ff,#9fd2ff);
+    border:2px solid white;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+}
+
+.btn{
+    position:absolute;
+    cursor:pointer;
+    user-select:none;
+    font-weight:bold;
+    color:#004080;
+    transition:.2s;
+}
+
+.btn:hover{
+    color:#0c84ff;
+    transform:scale(1.1);
+}
+
+.menu{
+    top:18px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.prev{
+    left:16px;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.next{
+    right:16px;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.play{
+    bottom:18px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.footer{
+    margin-top:15px;
+    text-align:center;
+    font-size:14px;
+    color:#004080;
+}
+
+.message::after{
+    content:"✦ ✧ ✦";
+    position:absolute;
+    right:20px;
+    bottom:15px;
+    color:#8fdfff;
+    font-size:28px;
+}
+
+@media(max-width:900px){
+
+.birthday-container{
+    flex-direction:column;
+    text-align:center;
+}
+
+.message{
+    max-width:100%;
+}
+
+h1{
+    font-size:46px;
+}
+
+p{
+    font-size:18px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="birthday-container">
+
+<div class="message">
+
+<h1>Happy Birthday, mom, I love you.</h1>
+
+<h2>For you, and you only!</h2>
+
+<p>
+Each passing day, each passing morning, oh mom how I smile wiping off the tired off my eyes when I see your smile.
+Through the window frame that I see the sun hit a ray through your face, a sweet soft warmth that radiates through your empowering soul.
+Oh mom, please don't be sad, nor cry, I'll do everything in my power to make you feel loved.
+Similar to every passing moment, where when I felt alone in the stillness of the world, it moved when I'm with you.
+I love you mom, happy birthday.
+</p>
+<br>
+<p>
+Kung saan nakadulot ang pang-unawa, hanapin mo na lang sa loob ng mundo na saan ang puso ko.
+Sa kalyeng puno ng usok sa kahirapan, yung pawis at luha nakadikit sa kidlat at mata.
+Sa loob ng kung anumang dilim, mayroon isang eskinita nakabukas lang para sa aking nanay sa puso ko.
+Hanapin mo na lang kapag sasabihin mo ang pangalan ko, Chilli. &lt;3
+</p>
+
+<img
+src="https://littlecakebox.com.au/cdn/shop/files/E9BD081F-0D65-45B8-900E-562BA8A8200D.jpg?v=1750210948&width=1500"
+alt="Birthday photo"
+class="photo">
+
+</div>
+
+<div class="ipod">
+
+<div class="screen" id="screen">
+Now Playing<br>
+birthday-song.mp3
+</div>
+
+<div class="wheel">
+
+<div class="btn menu">MENU</div>
+
+<div class="btn prev" onclick="prevSong()">⏮</div>
+
+<div class="btn next" onclick="nextSong()">⏭</div>
+
+<div class="btn play" onclick="toggleSong()">▶/⏸</div>
+
+<div class="center"></div>
+
+</div>
+
+<div class="footer">
+Classic iPod Music Player
+</div>
+
+</div>
+
+</div>
+
+<audio id="player"></audio>
+<script>
+
+const playlist = [
+    "yung kai - blue (Official Audio).mp3",
+    "The Moon Represents My Heart - Teresa Teng.mp3",
+    "Coldplay - Yellow (Official Video).mp3"
+];
+
+let current = 0;
+
+const audio = document.getElementById("player");
+const screen = document.getElementById("screen");
+
+function loadSong(){
+
+    audio.src = playlist[current];
+
+    screen.innerHTML =
+    "Now Playing<br>" + playlist[current]
+    .replace("songs/","")
+    .replace(".mp3","");
+
+}
+
+loadSong();
+
+
+function toggleSong(){
+
+    if(audio.paused){
+
+        audio.play();
+
+    }else{
+
+        audio.pause();
+
+    }
+
+}
+
+
+function nextSong(){
+
+    current++;
+
+    if(current >= playlist.length){
+
+        current = 0;
+
+    }
+
+    loadSong();
+
+    audio.play();
+
+}
+
+
+function prevSong(){
+
+    current--;
+
+    if(current < 0){
+
+        current = playlist.length - 1;
+
+    }
+
+    loadSong();
+
+    audio.play();
+
+}
+
+
+audio.addEventListener("ended", nextSong);
+
+</script>
+
+</body>
+</html>
+
